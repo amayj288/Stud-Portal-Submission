@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update Club Data</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto|Ubuntu" rel="stylesheet">
+
+	<style type="text/css">
+
+		body{
+			margin:0;
+			padding:0;
+		}
+		
+		h1{
+			font-family: sans-serif;
+			color:white;
+		}
+
+		img{
+			width:25%;
+			height:200px;
+			opacity: 0.2;
+		}
+
+		img:hover{
+			opacity:1;
+		}
+
+		.photos{1;
+			background:white;
+		}
+
+		.parallax1 {
+		    
+		    background-image: url("back.jpg");
+		    opacity: 0.7;
+		    min-height: 350%;
+		    background-attachment: fixed;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		}
+
+		body{
+			background: #192044;
+			margin:0;
+
+		}
+
+		.form{
+			width:600px;
+			height:350%;
+			background:#e6e6e6;
+			border-radius:8px;
+			box-shadow:0 0 40px -10px #000;
+			margin:calc(50vh - 220px) auto;
+			padding:20px 30px;
+			max-width:calc(100vw - 40px);
+			box-sizing:border-box;
+			font-family: 'Roboto', sans-serif;
+			position:relative;
+		}
+
+		h2{
+			margin:10px 0;
+			padding-bottom:10px;
+			width:180px;
+			color:#78788c;
+			border-bottom:3px solid #78788c
+		}
+
+		input{
+			width:100%;
+			padding:10px;
+			box-sizing:border-box;
+			background:none;
+			outline:none;
+			resize:none;
+			border:0;
+			font-family: 'Ubuntu', sans-serif;
+			transition:all .3s;
+			border-bottom:2px solid #bebed2
+		}
+
+		input:focus{
+			border-bottom:2px solid #78788c
+		}
+
+		p:before{
+			content:attr(type);
+			display:block;
+			margin:28px 0 0;
+			font-size:14px;
+			color:#5a5a5a
+		}
+
+		button{
+			float:right;
+			padding:8px 12px;
+			margin:8px 0 0;
+			font-family: 'Fira Sans', sans-serif;
+			border:2px solid #78788c;
+			background:0;color:#5a5a6e;
+			cursor:pointer;
+			transition:all .3s
+		}
+
+		
+		span{
+			margin:0 5px 0 15px
+		}
+
+		.button1:hover span {
+		  padding-right: 25px;
+		}
+
+		.button1:hover span:after {
+		  opacity: 1;
+		  right: 0;
+		}
+
+		.button2:hover span {
+		  padding-left: 25px;
+		}
+
+		.button2:hover span:after {
+		  opacity: 1;
+		  left: 0;
+		}
+
+		textarea{
+			font-family: 'Ubuntu', sans-serif;
+		}
+
+	</style>
+</head>
+<body>
+	
+	<div class="photos">
+
+		<a href="#c1"><img src="thumb_mag.jpg"></a><a href="#c1"><img src="thumb_ecell.jpg"></a><a href="#c1"><img src="thumb_astro.jpg"></a><a href="#c1"><img src="thumb_tesla.jpg"></a>
+		<br><a href="#c1"><img src="thumb_shell.jpeg"></a><a href="#c1"><img src="thumb_ivlabs.jpg"></a><a href="#c1"><img src="thumb_prayaas.jpg"></a><a href="#c1"><img src="thumb_grooves.jpg"></a>
+	
+	</div>
+
+	<div class="parallax1">
+		
+		<form class="form">
+		  <h2>UPDATE YOUR CLUB DATA</h2>
+		  <p id="c1" type="Name of the Club:"><input placeholder="Enter the name of your Club"></input></p>
+		  <p type="About the Club:"><br><textarea rows="4" cols="50" placeholder="Give an Introduction about your club"></textarea></p>
+		  <p type="Club President:"><input placeholder="Enter the name of your Club President"></input></p>
+		  <p type="Faculty Co-ordinator"><input placeholder="Enter the name of your Faculty Co-ordinator"></input></p>
+		  <p type="Posts:"><input placeholder="Enter the data to be visible on your Post "></input></p>
+		  <p type="Events:"><input placeholder="Enter your Event description"></input></p>
+		  <p type="Date and Time of Event:"><input type="datetime-local"></input></p>
+		  <p type="Upload Photos for Gallery:"><input type="file" multiple></input></p>
+		  <pre><button class="button1"><span><strong>Reset </span></button><button class="button2"><span>Update Details </strong></span></button></pre>
+		</form>
+
+	</div>
+
+</body>
+</html>
